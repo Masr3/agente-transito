@@ -1,0 +1,20 @@
+ion-content {
+    background-color: #f0f0f0; /* Cambiar el color de fondo del cuerpo */
+  }
+  
+  ul {
+    list-style-type: none; /* Quitar los puntos de lista */
+    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+  }
+  
+  li {
+    margin: 0; /* Eliminar el margen predeterminado de los elementos de lista */
+    padding: 10px; /* Agregar relleno alrededor de cada elemento de lista */
+
+  }
+  
+  ion-button {
+    /* Personalizar estilos del botón según sea necesario */
+    background-color: #007bff;
+    color: #ffffff;
+  }

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>list-multas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Lista de multas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h2 style="align-items: center;">Multas</h2>
+  <ul *ngFor="let multa of multas;">
+    <li>
+    <ion-button id="{{multa.id}}">{{multa.cedulaInfractor}}</ion-button>
+
+    <ion-alert
+    trigger="{{multa.id}}"
+    header="Detalles de la multa"
+    subHeader="Información detallada:"
+    message="Cedula del conductor: {{multa.cedulaInfractor}}   |   Motivo: {{multa.motivo}} |  fecha: {{multa.fecha}} |  hora: {{multa.hora}}"
+    >
+    <br />
+    </ion-alert>
+  </li>
+    
+  </ul>
+</ion-content>

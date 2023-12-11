@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Iniciar Sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Nombre de Usuario</ion-label>
+    <ion-input [(ngModel)]="username" name="username" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Matrícula</ion-label>
+    <ion-input [(ngModel)]="matricula" name="matricula" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+</ion-content>

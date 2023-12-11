@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>consultar vehiculo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">consultar vehiculo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+  <ion-item>
+    <ion-label position="floating">Placa</ion-label>
+    <ion-input [(ngModel)]="placa" placeholder="Escriba la placa" type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="buscaVehiculo()" >Buscar</ion-button>
+
+  <ng-container *ngIf="flag">
+    
+    <h1>{{vehiculo.marca}}</h1>
+    <ion-img src="{{vehiculo.foto}}"></ion-img>
+    <h2>Dueño: {{vehiculo.owner}}</h2>
+    <br/>
+    <h3>Fecha de adquisicion : {{vehiculo.fecha}}</h3>
+    <h4>{{vehiculo.licencia}}</h4>
+  </ng-container>
+
+
+
+</ion-content>

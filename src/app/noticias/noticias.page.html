@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">noticias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ng-container *ngFor="let new of news">
+    <h3>{{new.title.rendered}}</h3>
+  </ng-container>
+</ion-content>
